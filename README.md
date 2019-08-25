@@ -1,4 +1,3 @@
-# Temperature and light monitor using Arduino and Temboo
 Simple arduino device used to montior temperature and light levels in a room, recording readings to an automatically created spreadsheet on Google Sheets, as well as emailing results periodically. A LCD screen is also used to allow local monitoring of readings.
 
 NOTE: Due to RAM limitations on the Arduino Uno (2KB) to get all the functions to run without using all the RAM and causing either a crash or strange activity,I was forced to try and save on RAM usage anywhere I could. This means I had to remove as many unnecessary variables as possible, meaning all the Choreo details are in the main file and I created profiles on Temboo to use instead of putting the google details in the code. I also had to remove Serial messages, so there is no output other than what’s on the LCD display. I also ignore the Choreo responses where possible.
